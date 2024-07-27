@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: 2000px; /* Adjust as needed */
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+}
+
+.magnifying-glass {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    overflow: hidden;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.magnified-content {
+    transform-origin: top left;
+    transform: scale(0.5); /* Initial zoom level */
+}

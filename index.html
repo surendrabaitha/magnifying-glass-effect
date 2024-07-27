@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Magnifying Glass</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault();
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'J' || event.key === 'C')) {
+        event.preventDefault();
+    }
+});
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'F12') {
+        event.preventDefault();
+    }
+});
+
+    </script>
+</head>
+<body>
+    <div class="content">
+       
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptatem, sequi eum tempora fugit est nostrum ab in quidem cum.</p>
+        <p>Another paragraph to see the effect.</p>
+        <img src="img/2019-ford-expedition_100665045_l.jpg+qiHHBQ6" alt="">
+        <!-- Add more content as needed -->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iusto magnam consequatur velit nihil quis molestias non praesentium quisquam veniam assumenda voluptate blanditiis facilis error ut accusamus ipsa repudiandae ullam optio, ex asperiores illum nam reiciendis ipsum. Maxime dignissimos rem nostrum numquam consectetur placeat, amet dicta, explicabo saepe distinctio eligendi iure modi, repellendus nisi! Facere maiores labore adipisci fuga corporis ipsum ratione earum sit, soluta inventore sint vitae fugit iusto aspernatur sed esse totam. Totam dolore excepturi delectus ea amet culpa quod sed, provident vel voluptatem distinctio officiis ipsum voluptates tempore incidunt! Accusantium id officia, quas, ab reprehenderit illo omnis amet accusamus iusto fugiat, vitae odit tempora! Maiores, autem quos natus soluta tenetur amet similique ratione, animi nostrum iusto ducimus praesentium. Inventore fugit iure reiciendis quis accusamus veritatis cupiditate impedit. Debitis aliquid accusamus officiis at, doloremque deleniti temporibus! Accusamus, facere pariatur. Harum distinctio pariatur ipsa. Rem incidunt sapiente labore beatae tempore illo, ipsa repellendus! Amet dignissimos quasi, sunt fugit suscipit, totam labore est architecto similique cumque maiores voluptatum quia itaque? Enim dolor nobis voluptates. Sed, maxime tenetur debitis quo, eius dolorum, facilis accusantium itaque culpa fugiat aliquam? Aliquid excepturi velit id laudantium. Consequatur repellendus, ullam at impedit et tempora atque?</p>
+    </div>
+    <div class="magnifying-glass">
+        <div class="magnified-content">
+            <p>Your text content goes here. This is a sample paragraph to demonstrate the zoom effect.</p>
+            <p>Another paragraph to see the effect.</p>
+            <!-- Add more content as needed -->
+             
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
